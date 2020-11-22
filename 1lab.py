@@ -33,7 +33,7 @@ class MainWindow(QMainWindow):
 
         # Заголовок области декодирования
         self.title_text2 = QLabel(self)
-        self.title_text2.setText("Текст после кодирования")
+        self.title_text2.setText("{Закодированный текст")
         self.title_text2.resize(450, 40)
         self.title_text2.move(550, 20)
         self.title_text2.setFont(QFont('Arial', 14))
