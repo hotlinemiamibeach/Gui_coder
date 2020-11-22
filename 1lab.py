@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 import sys
 import os
+import time
 
 N = 2
 
@@ -112,7 +113,10 @@ class MainWindow(QMainWindow):
         for i in text:
             res.append(ord(i) + N)
         return str(res)[1:-1].replace(',', ' ')
-
+    
+    @staticmethod
+    def time_trace(start = 0, end = 0):
+        pass
 
 app = QApplication(sys.argv)
 window = MainWindow()
